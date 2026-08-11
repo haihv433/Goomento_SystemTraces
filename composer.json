@@ -1,0 +1,42 @@
+{
+    "name": "goomento/module-system-traces",
+    "description": "Request profiler: writes a single unified HTML timeline (SQL, API calls, observers, framework timers) to var/system_traces/ per request. Controlled by env.php in the module root, not admin config.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": [
+        "magento",
+        "magento2",
+        "adobe-commerce",
+        "profiler",
+        "performance",
+        "performance-monitoring",
+        "apm",
+        "debugging",
+        "debug-bar",
+        "devbar",
+        "developer-tools",
+        "developer-toolbar",
+        "sql-profiler",
+        "query-profiler",
+        "request-tracing",
+        "tracing",
+        "waterfall",
+        "observer-profiler",
+        "event-profiler",
+        "profiling",
+        "diagnostics"
+    ],
+    "require": {
+        "php": "~7.4.0||~8.1.0||~8.2.0||~8.3.0",
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Goomento\\SystemTraces\\": ""
+        }
+    }
+}
